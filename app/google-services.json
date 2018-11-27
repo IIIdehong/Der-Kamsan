@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "993988528433",
+    "firebase_url": "https://der-kamsan.firebaseio.com",
+    "project_id": "der-kamsan",
+    "storage_bucket": "der-kamsan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993988528433:android:10795d6d03a55a95",
+        "android_client_info": {
+          "package_name": "com.ratana.testgit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993988528433-isluiadevvc94glqaleiumve9vqrpbra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4XHrcviNU1PsSBvSdA5hqvgBxmsrrLXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

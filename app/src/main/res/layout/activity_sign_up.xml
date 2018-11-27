@@ -26,67 +26,79 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@null"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <EditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginTop="10dp"
-            android:hint="    UserName"
-            android:drawableLeft="@drawable/ic_green_user"/>
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_user"
+            android:hint="    UserName" />
 
         <EditText
+            android:id="@+id/et_email_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            android:hint="     Email or Phone"
-            android:drawableLeft="@drawable/ic_green_mail"/>
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_mail"
+            android:hint="     Email or Phone" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            android:hint="    Password"
-            android:drawableLeft="@drawable/ic_green_password"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/tilPass"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:hint="     Confirm Password"
-            android:drawableLeft="@drawable/ic_green_password"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-
-            android:orientation="horizontal"
-
-            >
-
-            <ImageButton
-                android:id="@+id/ivSignUp"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@null"
-                android:src="@drawable/btn_sing_up" />
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_green_password"
+                android:hint="    Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etConfirm_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_password"
+            android:hint="    Confirm Password"
+            android:inputType="textPassword" />
 
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@null"
-                android:src="@drawable/btn_cancel" />
+    </LinearLayout>
 
-        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/ibSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:src="@drawable/btn_sing_up" />
+
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:src="@drawable/btn_cancel" />
+
     </LinearLayout>
 </LinearLayout>

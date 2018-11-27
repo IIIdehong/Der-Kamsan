@@ -24,6 +24,8 @@ public class PopularPlaces_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_popular_places_, container, false);
+
     }
+
 
 }
