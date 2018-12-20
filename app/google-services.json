@@ -1,6 +1,6 @@
 {
   "project_info": {
-    "project_number": "993988528433",
+    "project_number": "461786374344751",
     "firebase_url": "https://der-kamsan.firebaseio.com",
     "project_id": "der-kamsan",
     "storage_bucket": "der-kamsan.appspot.com"
@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:993988528433:android:10795d6d03a55a95",
+        "mobilesdk_app_id": "1:461786374344751:android:10795d6d03a55a95",
         "android_client_info": {
           "package_name": "com.ratana.testgit"
         }

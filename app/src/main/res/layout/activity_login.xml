@@ -66,12 +66,11 @@
             android:layout_height="wrap_content"
             android:src="@drawable/btn_signin"/>
 
-        <ImageButton
-            android:id="@+id/ibsingin_fb"
-            android:background="@null"
+        <com.facebook.login.widget.LoginButton
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:src="@drawable/sign_in_fb"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFacebookLogin"
+            android:layout_gravity="center" />
 
         <TextView
             android:id="@+id/tvRegister"
