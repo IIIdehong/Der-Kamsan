@@ -1,4 +1,4 @@
-package com.ratana.testgit;
+package kh.edu.rupp.ckcc.derkamsan;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 
 class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.EventViewHolder>{

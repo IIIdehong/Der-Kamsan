@@ -1,8 +1,19 @@
-package com.ratana.testgit;
+package kh.edu.rupp.ckcc.derkamsan;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.Profile;
+import com.facebook.login.LoginResult;
+import com.google.gson.Gson;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,4 +29,5 @@ public class MainActivity extends AppCompatActivity {
 
 //        getSupportActionBar();
     }
+
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:id="@+id/rlToolbar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#179ba9"
+        android:theme="@style/AlertDialog.AppCompat.Light">
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_back"
+        android:layout_margin="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivClose"
+            android:layout_marginLeft="70dp"
+            android:text="SMS Verification"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+  </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar">
+        <TextView
+            android:id="@+id/tvCodePH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#179ba9"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:text="Verify your code phone number "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCodePH"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

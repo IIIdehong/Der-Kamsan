@@ -1,4 +1,4 @@
-package com.ratana.testgit;
+package kh.edu.rupp.ckcc.derkamsan;
 
 public class Places {
     private String Title;

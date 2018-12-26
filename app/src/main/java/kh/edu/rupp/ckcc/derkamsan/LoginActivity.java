@@ -1,4 +1,4 @@
-package com.ratana.testgit;
+package kh.edu.rupp.ckcc.derkamsan;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,9 @@ import android.widget.TextView;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,6 +26,12 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.gson.Gson;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Arrays;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -49,7 +58,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         // Check login status with Firebase
         if(FirebaseAuth.getInstance().getCurrentUser()!= null){
-            Intent intent = new Intent(this,SignUpActivity.class);
+            Intent intent = new Intent(this,ProfileActivity.class);
             startActivity(intent);
             finish();
             return;
@@ -59,25 +68,58 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ibSignIn.setOnClickListener(this);
         ivBack.setOnClickListener(this);
         ForgetPassword.setOnClickListener(this);
+        btnLoginFB.setReadPermissions(Arrays.asList("public_profile", "email", "user_birthday", "user_friends"));
         callbackManager= CallbackManager.Factory.create();
         btnLoginFB.registerCallback(callbackManager ,new FacebookCallback<LoginResult>() {
             @Override
-            public void onSuccess(LoginResult loginResult) {
+            public void onSuccess(final LoginResult loginResult) {
                 // Pass token to Firebase Auth to manage
+
                 AuthCredential credential = FacebookAuthProvider.getCredential(loginResult.getAccessToken().getToken());
                 FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Log.d("ckcc", "Login with Firebase success.");
-                            Intent intent = new Intent(LoginActivity.this, com.ratana.testgit.MainActivity.class);
-                            startActivity(intent);
+                            Log.d("Der_Kamsan", "Login with Firebase success.");
+
                             finish();
+
                         } else {
-                            Log.d("ckcc", "Login with Firebase error: " + task.getException());
+                            Log.d("Der_Kamsan", "Login with Firebase error: " + task.getException());
                         }
                     }
                 });
+//                GraphRequest request = GraphRequest.newMeRequest(
+//                        loginResult.getAccessToken(),
+//                        new GraphRequest.GraphJSONObjectCallback() {
+//                            @Override
+//                            public void onCompleted(JSONObject object, GraphResponse response) {
+//                                Log.v("LoginActivity", response.toString());
+//
+//                                // Application code
+//                                try {
+//                                    String email = object.getString("email");
+//                                    String birthday = object.getString("birthday"); // 01/31/1980 format
+//
+//                                    Gson gson = new Gson();
+//                                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+//                                    String gsonLogin = gson.toJson(loginResult);
+//                                    intent.putExtra("LoginResultData", gsonLogin);
+//                                    Log.v("LoginActivity", email);
+//                                    intent.putExtra("email",email);
+//                                    startActivity(intent);
+//                                    finish();
+//                                } catch (JSONException e) {
+//                                    e.printStackTrace();
+//                                }
+//
+//                            }
+//                        });
+//                Bundle parameters = new Bundle();
+//                parameters.putString("fields", "id,name,email,gender,birthday");
+//                request.setParameters(parameters);
+//                request.executeAsync();
+
             }
 
             @Override
@@ -97,7 +139,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode,resultCode,data);
+        Log.d("Der_Kamsan", "onActivityResult");
+
     }
+
 
     public void login(String Email, String Phone, String Password){
         if((Email =="kkk")||(Phone == "098765432")&&(Password=="123")){
@@ -117,6 +162,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(LoginActivity.this,SignUpActivity.class));
                 break;
             case R.id.ibSignIn:
+
                 break;
             case R.id.tvForgot_passw:
                 break;

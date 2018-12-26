@@ -58,88 +58,140 @@
         </RelativeLayout>
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="10dp"
             >
             <ImageView
-
+                android:id="@+id/Hok_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/ic_hok" />
+
             <TextView
-                android:layout_margin="15dp"
+                android:id="@+id/tvHok"
+                android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fb:fb.me/de.hong.5
-Mail: hokhacker@gmail.com"
+                android:layout_toRightOf="@id/Hok_profile"
+                android:text="@string/hok_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
                  />
-        </LinearLayout>
+            <TextView
+                android:id="@+id/mail_hok"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHok"
+                android:layout_toRightOf="@id/Hok_profile"
+                android:text="@string/hok_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="10dp"
             >
             <ImageView
-
+                android:id="@+id/Moka_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/ic_moka" />
             <TextView
-                android:layout_margin="15dp"
+                android:id="@+id/tvMoka_fb"
+                android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fb:fb.me/molyka.19.07
-Mail: sovannmolyka79@gmail.com"
+                android:layout_toRightOf="@id/Moka_profile"
+                android:text="@string/moka_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
                 />
-        </LinearLayout>
-        <LinearLayout
+            <TextView
+                android:id="@+id/Moka_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMoka_fb"
+                android:layout_toRightOf="@id/Moka_profile"
+                android:text="@string/moka_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="10dp"
             >
             <ImageView
-
+                android:id="@+id/Kheang_pro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/ic_kheang" />
             <TextView
-                android:layout_margin="15dp"
+                android:id="@+id/tvKheang_fb"
+                android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fb:fb.me/chhoem.sokheang.3
-Mail:sokheangchhoem0408@gmail.com"
+                android:layout_toRightOf="@+id/Kheang_pro"
+                android:text="@string/kheang_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
                 />
-        </LinearLayout>
-        <LinearLayout
+            <TextView
+                android:id="@+id/Kheang_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvKheang_fb"
+                android:layout_toRightOf="@id/Kheang_pro"
+                android:text="@string/kheang_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="10dp"
             >
             <ImageView
-
+                android:id="@+id/Ratana_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/ic_ratana" />
             <TextView
-                android:id="@+id/ivSignUp"
-                android:layout_margin="15dp"
+                android:id="@+id/tvRatana_fb"
+                android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fb:fb.me/ratana.chhorm
-Mail:chhormratana@gmail.com"
+                android:layout_toRightOf="@id/Ratana_profile"
+                android:text="@string/ratana_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
                 />
-        </LinearLayout>
+            <TextView
+                android:id="@+id/Ratana_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRatana_fb"
+                android:layout_toRightOf="@id/Ratana_profile"
+                android:text="@string/ratana_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>

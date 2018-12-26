@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "461786374344751",
-    "firebase_url": "https://der-kamsan.firebaseio.com",
-    "project_id": "der-kamsan",
-    "storage_bucket": "der-kamsan.appspot.com"
+    "project_number": "153503414697",
+    "firebase_url": "https://der-kamsan-firebase.firebaseio.com",
+    "project_id": "der-kamsan-firebase",
+    "storage_bucket": "der-kamsan-firebase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:461786374344751:android:10795d6d03a55a95",
+        "mobilesdk_app_id": "1:153503414697:android:a6bb1fee9db62b81",
         "android_client_info": {
-          "package_name": "com.ratana.testgit"
+          "package_name": "kh.edu.rupp.ckcc.derkamsan"
         }
       },
       "oauth_client": [
         {
-          "client_id": "993988528433-isluiadevvc94glqaleiumve9vqrpbra.apps.googleusercontent.com",
+          "client_id": "153503414697-c6bsp08mjdpuvse6infkkdh4h9lembqe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4XHrcviNU1PsSBvSdA5hqvgBxmsrrLXs"
+          "current_key": "AIzaSyCngpIM4-4f6xpBUUsqSQiXcuTx_r7fiYc"
         }
       ],
       "services": {

@@ -1,10 +1,11 @@
-package com.ratana.testgit;
+package kh.edu.rupp.ckcc.derkamsan;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 
 public class HomeActivity extends AppCompatActivity {
 
