@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/dark_green"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/btn_menu" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="Search"
+            android:padding="10dp"
+            android:textColorHint="@color/White"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0"
+            android:src="@drawable/btn_notification" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_header">
+
+
+        <ScrollView
+            android:layout_below="@id/navigation_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/angkor_wat"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:layout_below="@+id/pic1"
+                    android:src="@drawable/dong_te"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_below="@id/pic2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/kampot" />
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_below="@id/pic3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/koh_rong" />
+
+                <ImageView
+                    android:id="@+id/pic5"
+                    android:layout_below="@id/pic4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/bo_kor" />
+
+                <ImageView
+                    android:id="@+id/pic6"
+                    android:layout_below="@id/pic5"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/preah_vihea" />
+
+                <ImageView
+                    android:id="@+id/pic7"
+                    android:layout_below="@id/pic6"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/phnom_kulen" />
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Offline_data"
+        android:title="Offline Data"
+        android:icon="@drawable/ic_offline"/>
+    <item
+        android:id="@+id/about_dks"
+        android:title="About DKS"
+        android:icon="@drawable/icons_about"/>
+    <item
+        android:id="@+id/contact_us"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_contact_us"/>
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_setting_blue"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_logout"/>
+
+
+</menu>
